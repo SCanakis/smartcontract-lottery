@@ -12,12 +12,16 @@ compiler:
       - "@chainlink=smartcontractkit/chainlink@2.18.0"
 
 networks:
+  default: development
   sepolia:
     eth_usd_price_feed: "0x694AA1769357215DE4FAC081bf1f309aDC325306" 
+    vrf_wrapper: "0x195f15F2d49d693cE265b4fB0fdDbE15b1850Cc1" 
     verify: True
   mainnet-fork-dev:
     eth_usd_price_feed: "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
+    vrf_wrapper: "0x02aae1A04f9828517b3007f83f6181900CaD910c"
     verify: True
   mainnet-fork:
     eth_usd_price_feed: "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
+    vrf_wrapper: "0x02aae1A04f9828517b3007f83f6181900CaD910c"
     verify: True
